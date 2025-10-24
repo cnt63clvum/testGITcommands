@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trang HTML cơ bản</title>
+    <!-- CSS nhẹ để nhìn đẹp hơn -->
+    <style>
+      :root { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+      body { max-width: 900px; margin: 40px auto; padding: 16px; line-height: 1.6; }
+      header { margin-bottom: 24px; }
+      h1 { font-size: 1.8rem; margin: 0 0 8px 0; }
+      nav a { margin-right: 12px; text-decoration: none; }
+      main { background: #f9f9f9; padding: 16px; border-radius: 8px; }
+      footer { margin-top: 24px; font-size: 0.9rem; color: #555; }
+      .btn { display:inline-block; padding:8px 12px; border-radius:6px; border:1px solid #888; cursor:pointer; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Trang HTML cơ bản</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h2>Giới thiệu</h2>
+        <p>Đây là một mẫu file HTML đơn giản dùng để bắt đầu một trang web. Bạn có thể sửa nội dung, thêm CSS hoặc JavaScript theo ý muốn.</p>
+        <button class="btn" id="sayHiBtn">Nhấn để chào</button>
+      </section>
+
+      <section id="about" style="margin-top:16px;">
+        <h2>About</h2>
+        <p>Thêm thông tin về dự án, tác giả, hoặc hướng dẫn sử dụng tại đây.</p>
+      </section>
+    </main>
+
+    <footer>
+      © " + new Date().getFullYear() + " — Tên của bạn"
+    </footer>
+
+    <script>
+      // JavaScript nhỏ: hiển thị alert và log khi nhấn nút
+      document.getElementById('sayHiBtn').addEventListener('click', function () {
+        alert('Xin chào!');
+        console.log('Người dùng đã nhấn nút chào');
+      });
+    </script>
+  </body>
+</html>
